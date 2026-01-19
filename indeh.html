@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Server Status</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top,#0f2a30,#02080a);
+    color:#fff;
+}
+
+.container{
+    max-width:420px;
+    margin:auto;
+    padding:16px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.logo-circle{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background:#00ffe1;
+    box-shadow:0 0 30px #00ffe1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    color:#004d45;
+    font-size:28px;
+}
+
+.header h2{
+    margin:15px 0 5px;
+    letter-spacing:1px;
+}
+
+.header p{
+    font-size:14px;
+    color:#9fffe9;
+}
+
+.card{
+    background:rgba(10,20,24,0.9);
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:
+        inset 0 0 12px rgba(0,255,225,0.15),
+        0 0 8px rgba(0,0,0,0.7);
+}
+
+.title{
+    font-size:15px;
+    margin-bottom:14px;
+}
+
+.copy-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#00ffe1,#00c9ff);
+    color:#003f3a;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.copy-btn:active{
+    transform:scale(0.97);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="lK K A FREE KEYS">SS</div>
+        <h2>K K A FREE KEYS</h2>
+        <p>Premium Network Active</p>
+    </div>
+
+    <div class="card">
+        <div class="title">AIS 64Kbps (V2Ray)</div>
+        <button class="copy-btn" onclick="copyKey('AIS-64-KEY')">COPY KEY</button>
+    </div>
+
+    <div class="card">
+        <div class="title">True VDO (V2Ray)</div>
+        <button class="copy-btn" onclick="copyKey('TRUE-VDO-KEY')">COPY KEY</button>
+    </div>
+
+    <div class="card">
+        <div class="title">True Twitter</div>
+        <button class="copy-btn" onclick="copyKey('TRUE-TWITTER-KEY')">COPY KEY</button>
+    </div>
+
+    <div class="card">
+        <div class="title">True Viber</div>
+        <button class="copy-btn" onclick="copyKey('TRUE-VIBER-KEY')">COPY KEY</button>
+    </div>
+
+    <div class="card">
+        <div class="title">True ID</div>
+        <button class="copy-btn" onclick="copyKey('TRUE-ID-KEY')">COPY KEY</button>
+    </div>
+
+    <div class="card">
+        <div class="title">DTAC Gaming Plan</div>
+        <button class="copy-btn" onclick="copyKey('DTAC-GAMING-KEY')">COPY KEY</button>
+    </div>
+
+</div>
+
+<script>
+function copyKey(text){
+    navigator.clipboard.writeText(text).then(()=>{
+        alert("Key Copied!");
+    });
+}
+</script>
+
+</body>
+</html>
